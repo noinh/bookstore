@@ -1,9 +1,0 @@
-digraph "bookstore" {
-  node [shape="box",style="rounded",fontname="Helvetica",fontsize="14"]
-  edge [fontsize="10",fontname="Helvetica"]
-
-  // Node Definitions:
-  "com.bookstore.system:bookstore:pom"[label=<bookstore>]
-
-  // Edge Definitions:
-}
