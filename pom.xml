@@ -60,7 +60,17 @@
         </dependencies>
     </dependencyManagement>
 
-    <dependencies></dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -76,18 +86,18 @@
                 <groupId>com.github.ferstl</groupId>
                 <artifactId>depgraph-maven-plugin</artifactId>
                 <version>4.0.2</version>
-<!--                <configuration>-->
-<!--                    <graphFormat>puml</graphFormat>-->
-<!--                    <scope>compile</scope>-->
-<!--                    <excludes>-->
-<!--                        <exclude>org.slf4j:slf4j-api</exclude>-->
-<!--                        <exclude>com.google.guava:guava</exclude>-->
-<!--                        <exclude>io.vavr:vavr</exclude>-->
-<!--                    </excludes>-->
-<!--                    <transitiveExcludes>-->
-<!--                        <transitiveExclude>*</transitiveExclude>-->
-<!--                    </transitiveExcludes>-->
-<!--                </configuration>-->
+                <!--                <configuration>-->
+                <!--                    <graphFormat>puml</graphFormat>-->
+                <!--                    <scope>compile</scope>-->
+                <!--                    <excludes>-->
+                <!--                        <exclude>org.slf4j:slf4j-api</exclude>-->
+                <!--                        <exclude>com.google.guava:guava</exclude>-->
+                <!--                        <exclude>io.vavr:vavr</exclude>-->
+                <!--                    </excludes>-->
+                <!--                    <transitiveExcludes>-->
+                <!--                        <transitiveExclude>*</transitiveExclude>-->
+                <!--                    </transitiveExcludes>-->
+                <!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
